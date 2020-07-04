@@ -262,7 +262,7 @@ def player_with_longest_name
   longest_name_size = 0
   game_hash.each do |parent_key, parent_hash|
     parent_hash[:players].each do |player_data|
-      puts "#{player_data[:player_name]} --- #{"
+      puts "#{player_data[:player_name]} --- #{player_data[:player_name].length}"
       if !longest_name && longest_name_size == 0
         longest_name = player_data[:player_name]
         longest_name_size = player_data[:player_name].length
