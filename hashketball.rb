@@ -238,5 +238,7 @@ def most_points_scored
   return player_stats[:points]
 end
 
-
+def winning_team
+  game_hash.each do |parent_key, parent_hash|
+    
 
