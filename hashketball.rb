@@ -218,3 +218,22 @@ def big_shoe_rebounds
   return player_stats[:rebounds]
 end
 
+def most_points_scored
+  largest_shoe_size = 0
+  player_stats = nil
+  game_hash.each do |parent_key,parent_hash|
+    parent_hash[:players].each do |player_data|
+      if largest_shoe_size == 0 && !player_stats
+        largest_shoe_size = player_data[:shoe]
+        player_stats = player_data
+      else
+        if player_data[:shoe] > largest_shoe_size
+          largest_shoe_size = player_data[:shoe]
+          player_stats = player_data
+        end
+      end
+    end
+  end
+  
+  return player_stats[:points]
+end
