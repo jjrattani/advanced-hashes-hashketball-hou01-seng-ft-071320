@@ -273,7 +273,7 @@ def player_with_longest_name
       end
     end
   end
-  return nil
+  return longest_name
 end
       
     
