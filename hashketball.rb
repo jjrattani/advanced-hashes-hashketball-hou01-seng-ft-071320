@@ -257,7 +257,12 @@ def winning_team
   end
 end
   
-
+def player_with_longest_name
+  longest_name = nil
+  longest_name_size = 0
+  game_hash.each do |parent_key, parent_hash|
+    parent_hash[:players].each do |player_name|
+      
       
     
 
