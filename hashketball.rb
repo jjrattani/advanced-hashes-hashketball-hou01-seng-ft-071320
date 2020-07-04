@@ -295,7 +295,7 @@ def long_name_steals_a_ton
     end
   end
   
-  puts "#{longest_name} is the longest name.  They had #{longest_name_steals} steals in the game.  The Most steals was #{most_steals}"
+  #puts "#{longest_name} is the longest name.  They had #{longest_name_steals} steals in the game.  The Most steals was #{most_steals}"
   
   return longest_name_steals == most_steals
 end
